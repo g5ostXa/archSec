@@ -27,10 +27,9 @@ echo -e "${RC}" && echo ""
 ufw_config() {
 	echo -e "${CYAN};; Installing and configuring UFW...${RC}"
 	sudo pacman -S --noconfirm ufw
-	echo "Test 10 seconds" && sleep 10
-	# sudo ufw default deny incoming
-	# sudo ufw default allow outgoing
-	# sudo ufw enable && sudo systemctl enable ufw.service
+	sudo ufw default deny incoming
+	sudo ufw default allow outgoing
+	sudo ufw enable && sudo systemctl enable ufw.service
 
 	echo -e "${CYAN}==> NOTE:${RC}"
 	echo -e "${YELLOW}-> A reboot is required for the firewall to be enabled and active!${RC}"
