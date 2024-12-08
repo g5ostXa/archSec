@@ -12,12 +12,12 @@ RC='\033[0m'
 
 # Define variables for sysctl
 SYSCTL_DIR="/etc/sysctl.d"
-SYSCTL_SOURCE_DIR="$HOME/archSec/sysctl"
+SYSCTL_SOURCE_DIR="./sysctl"
 
 # Define variables for dnsmasq and dnssec
 DNSMASQ_CONFIG="/etc/dnsmasq.conf"
 DNSSEC_TARGET_DIR="/etc/NetworkManager/dnsmasq.d"
-DNSSEC_SOURCE_FILE_LOC="$HOME/archSec/NetworkManager/dnsmasq.d/dnssec.conf"
+DNSSEC_SOURCE_FILE_LOC="./NetworkManager/dnsmasq.d/dnssec.conf"
 
 # Script banner
 echo -e "${CYAN}"
